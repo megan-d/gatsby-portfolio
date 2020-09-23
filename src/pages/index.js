@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import Hero from '../components/hero';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectCard from '../components/projectCard'
@@ -8,7 +7,8 @@ import ProjectCard from '../components/projectCard'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h3 style={{textAlign: 'center'}}>Projects</h3>
+    <Hero />
+    <h3 style={{textAlign: 'center', margin: '0', padding: '0'}}>Projects</h3>
     <ProjectCard title={'Dash'}/>
     <ProjectCard title={'Televize'}/>
     <ProjectCard title={'Fit Ally'}/>
