@@ -21,7 +21,7 @@ module.exports = {
           families: ['Poppins']
         }
       }
-    }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
