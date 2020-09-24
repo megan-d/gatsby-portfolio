@@ -18,7 +18,14 @@ const projects = [
     description:
       "Application for browsing television shows and viewing similar show recommendations",
     tech:
-      "React, JWT, Node.js, Express, React-Bootstrap, Styled Components, TMDb API",
+      "React, JWT, Node.js, Express, React-Bootstrap, Styled Components, custom design, TMDb API",
+  },
+  {
+    title: "Fit Ally",
+    description:
+      "Application for browsing television shows and viewing similar show recommendations",
+    tech:
+      "React, Redux, Node.js, Express, JWT, custom design and CSS",
   },
 ]
 
