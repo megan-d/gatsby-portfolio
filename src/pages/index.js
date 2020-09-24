@@ -1,4 +1,5 @@
 import React from "react"
+import "../components/index.css"
 import Hero from "../components/hero"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
