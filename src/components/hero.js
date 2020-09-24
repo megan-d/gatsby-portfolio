@@ -19,7 +19,8 @@ const Hero = props => (
       <div className='hero-subtitle'>
       <p>
         Check out my recent projects below and my github profile{" "}
-        <a href="https://www.github.com/megan-d" className='anchor'>here.</a> 
+        <a href="https://www.github.com/megan-d" className='anchor' target="_blank"
+          rel="noopener noreferrer">here.</a> 
       </p>
       <img src={github} alt='github-logo' className='github-logo'/>
       </div>
