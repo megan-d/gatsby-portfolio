@@ -5,6 +5,14 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Poppins']
+        }
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-theme-material-ui`,
     {
