@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import "../components/index.css"
 // import { useStaticQuery, graphql } from "gatsby"
 
 const Layout = ({ children }) => {

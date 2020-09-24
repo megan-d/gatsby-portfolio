@@ -3,7 +3,6 @@ import Hero from "../components/hero"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectCard from "../components/projectCard"
-import "../components/index.css"
 import dash from '../images/Dash.png';
 
 const projects = [
