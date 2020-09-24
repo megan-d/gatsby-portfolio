@@ -15,13 +15,16 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        google: {
-          families: ['Poppins']
-        }
-      }
-    },
+        fonts: [
+          {
+            family: `Poppins`,
+            subsets: [`l400`, `700`],
+          },
+        ],
+      },
+    }
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
