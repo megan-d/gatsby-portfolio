@@ -20,7 +20,7 @@ module.exports = {
         fonts: [
           {
             family: `Poppins`,
-            subsets: [`400`, `700`],
+            variants: [`400`, `700`],
           },
         ],
       },
