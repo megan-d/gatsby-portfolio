@@ -15,7 +15,7 @@ body {
 
 .logo {
   height: 70px;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-top: 20px;
 }
 
@@ -63,19 +63,15 @@ body {
 .card-content {
   align-self: flex-start;
   max-height: 100%;
-  max-width: 90%;
+  width: 100%;
 }
 
-.project-image {
-  max-width: 90%;
-  height: 60%;
-  max-height: 500px;
+/* .project-image {
+  max-width: 988px;
+  max-height: 498px;
   border-radius: 10px;
-}
+} */
 
-.card-button:hover {
-  background: blue;
-}
 .card {
   background-color: white;
   display: flex;
@@ -84,7 +80,7 @@ body {
   justify-content: space-around;
   width: 60vw;
   height: 80vh;
-  max-height: 80vh;
+  min-height: 610px;
   margin: 40px auto;
   padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -99,14 +95,20 @@ body {
   font-weight: bold;
   border: none;
   border-radius: 5px;
-  padding: 0.3rem;
+  padding: 8px;
   font-size: 14px;
   width: 135px;
-  max-width: 150px;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
   cursor: pointer;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  margin-right: 10px;
+}
+
+.card-button:hover {
+  background: grey;
 }
 
 /* .content-container {
@@ -120,33 +122,33 @@ body {
     height: 80vh;
   }
 
-  .project-image {
+  /* .project-image {
     max-width: 100%;
-  }
+  } */
 
   .github-logo {
     display: none;
   }
+
+  .hero-text {
+    margin-left: 45px;
+    margin-right: 40px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-  .project-image {
+  /* .project-image {
     max-height: 50%;
-  }
-
-  .hero-text {
-    margin-right: 10%;
-  }
+  } */
 }
 
 @media only screen and (max-width: 660px) {
-  .project-image {
-    max-height: 40%;
-  }
 }
 
 @media only screen and (max-width: 400px) {
-  .project-image {
-    max-height: 30%;
+  .card {
+    padding: 20px;
+    margin: 20px;
+    min-height: 500px;
   }
 }
