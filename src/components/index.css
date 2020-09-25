@@ -63,19 +63,13 @@ body {
 .card-content {
   align-self: flex-start;
   max-height: 100%;
-  width: 90%;
   max-width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
 }
 
 .project-image {
-  max-width: 100%;
-  margin: 0;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 5%;
+  max-width: 90%;
+  height: 60%;
+  max-height: 500px;
   border-radius: 10px;
 }
 
@@ -88,12 +82,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 70vw;
-  height: 90vh;
-  max-height: 90vh;
+  width: 60vw;
+  height: 80vh;
+  max-height: 80vh;
   margin: 40px auto;
+  padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+  overflow: scroll;
 }
 
 .card-button {
@@ -118,12 +114,39 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23a8a7a9' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 } */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 980px) {
   .card {
-    height: 60vh;
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .project-image {
+    max-width: 100%;
+  }
+
+  .github-logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .project-image {
+    max-height: 50%;
   }
 
   .hero-text {
     margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .project-image {
+    max-height: 40%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .project-image {
+    max-height: 30%;
   }
 }
