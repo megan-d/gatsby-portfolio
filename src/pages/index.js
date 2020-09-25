@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import ProjectCard from "../components/projectCard"
 import dash from '../images/Dash.png';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 const projects = [
   {
@@ -41,7 +40,7 @@ const projects = [
   {
     title: "Portfolio",
     description: "Portfolio site to display my recent projects",
-    tech: "Gatsby, graphql, custom CSS",
+    tech: "Gatsby, GraphQL, custom CSS",
     applicationUrl: "https://megan-d.netlify.app",
     codeUrl: "https://github.com/megan-d/gatsby-portfolio",
     image: `${dash}`
@@ -77,7 +76,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
 query {
-  file(relativePath: {eq: "Dash.png"}) {
+  file(relativePath: {eq: "Televize-1.png"}) {
     childImageSharp {
         fluid(maxWidth: 988) {
           ...GatsbyImageSharpFluid
