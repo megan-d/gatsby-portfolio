@@ -13,7 +13,7 @@ const projects = [
       "Full-stack issue tracking, project management, and coding collaboration application",
     tech:
       "React, Context API, Node.js, Express, MongoDB, JWT, Material UI, Styled Components",
-    applicationUrl: "https://dash-tracker.herokuapp.com/",
+    applicationUrl: "https://dash-tracker.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Dash",
     image: `${dash}`
   },
@@ -23,7 +23,7 @@ const projects = [
       "Application for browsing television shows and viewing similar show recommendations",
     tech:
       "React, JWT, Node.js, Express, React-Bootstrap, Styled Components, TMDb API",
-    applicationUrl: "https://televize.herokuapp.com/",
+    applicationUrl: "https://televize.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Televize",
     image: `${dash}`
   },
@@ -32,15 +32,15 @@ const projects = [
     description:
       "Full-stack fitness application that provides a visual representation of fitness stats and activities",
     tech: "React, Redux, Node.js, Express, MongoDB, JWT, custom Sass/Scss",
-    applicationUrl: "https://fit-ally.herokuapp.com/",
+    applicationUrl: "https://fit-ally.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Fit-Ally",
     image: `${dash}`
   },
   {
     title: "Portfolio",
     description: "Portfolio site to display my recent projects",
-    tech: "Gatsby, MaterialUI",
-    applicationUrl: "https://megan-d.netlify.app/",
+    tech: "Gatsby, custom CSS",
+    applicationUrl: "https://megan-d.netlify.app",
     codeUrl: "https://github.com/megan-d/gatsby-portfolio",
     image: `${dash}`
   },
