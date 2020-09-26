@@ -21,13 +21,13 @@ const ProjectCard = props => {
     <div className="card">
       {/* <img src={props.image} alt="project" className='project-image'/> */}
       {props.title === "Dash" ? (
-        <Img fluid={props.dash} style={{ width: "90%" }} />
+        <Img fluid={props.dash} style={{ width: "90%", boxShadow: '0 0 5px rgba(0, 0, 0, 0.4)' }} />
       ) : props.title === "Televize" ? (
-        <Img fluid={props.televize} style={{ width: "90%" }} />
+        <Img fluid={props.televize} style={{ width: "90%", boxShadow: '0 0 5px rgba(0, 0, 0, 0.4)' }} />
       ) : props.title === "Fit Ally" ? (
-        <Img fluid={props.fitAlly} style={{ width: "90%" }} />
+        <Img fluid={props.fitAlly} style={{ width: "90%", boxShadow: '0 0 5px rgba(0, 0, 0, 0.4)' }} />
       ) :(
-        <Img fluid={props.televize} style={{ width: "90%" }} />
+        <Img fluid={props.televize} style={{ width: "90%", boxShadow: '0 0 5px rgba(0, 0, 0, 0.4)' }} />
       )}
 
       <div className="card-content">

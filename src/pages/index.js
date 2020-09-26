@@ -76,7 +76,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    dash: file(relativePath: { eq: "Dash.png" }) {
+    dash: file(relativePath: { eq: "Dash-1.png" }) {
       childImageSharp {
         fluid(maxWidth: 985, quality: 100) {
           ...GatsbyImageSharpFluid
