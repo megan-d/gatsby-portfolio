@@ -4,9 +4,7 @@ import Hero from "../components/hero"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectCard from "../components/projectCard"
-import dash from "../images/Dash.png"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 
 const projects = [
   {
@@ -14,7 +12,7 @@ const projects = [
     description:
       "Full-stack issue tracking, project management, and coding collaboration application",
     tech:
-      "React, Context API, Node.js, Express, MongoDB, JWT, Material UI, Styled Components",
+      "React, Context API, Node.js, Express, MongoDB, JWT, Material UI, Styled Components, Chart.js",
     applicationUrl: "https://dash-tracker.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Dash",
     image: "dash",
@@ -33,7 +31,7 @@ const projects = [
     title: "Fit Ally",
     description:
       "Full-stack fitness application that provides a visual representation of fitness stats and activities",
-    tech: "React, Redux, Node.js, Express, MongoDB, JWT, SCSS",
+    tech: "React, Redux, Node.js, Express, MongoDB, JWT, SCSS, Chart.js",
     applicationUrl: "https://fit-ally.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Fit-Ally",
     image: "fit-ally",
