@@ -63,6 +63,7 @@ const IndexPage = props => (
           dash={props.data.dash.childImageSharp.fluid}
           televize={props.data.televize.childImageSharp.fluid}
           fitAlly={props.data.fitAlly.childImageSharp.fluid}
+          portfolio={props.data.portfolio.childImageSharp.fluid}
           key={index}
         />
       )
@@ -89,6 +90,13 @@ export const pageQuery = graphql`
       }
     }
     fitAlly: file(relativePath: { eq: "Fit-Ally-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 985, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    portfolio: file(relativePath: { eq: "Portfolio-1.png" }) {
       childImageSharp {
         fluid(maxWidth: 985, quality: 100) {
           ...GatsbyImageSharpFluid

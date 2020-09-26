@@ -13,7 +13,7 @@ const ProjectCard = props => {
       ) : props.title === "Fit Ally" ? (
         <Img fluid={props.fitAlly} style={{ width: "90%", boxShadow: '0 0 5px rgba(0, 0, 0, 0.4)' }} />
       ) :(
-        <Img fluid={props.televize} style={{ width: "90%", boxShadow: '0 0 5px rgba(0, 0, 0, 0.4)' }} />
+        <Img fluid={props.portfolio} style={{ width: "90%", boxShadow: '0 0 5px rgba(0, 0, 0, 0.4)' }} />
       )}
 
       <div className="card-content">
