@@ -4,9 +4,9 @@ import Hero from "../components/hero"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectCard from "../components/projectCard"
-import dash from '../images/Dash.png';
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import dash from "../images/Dash.png"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 const projects = [
   {
@@ -17,7 +17,7 @@ const projects = [
       "React, Context API, Node.js, Express, MongoDB, JWT, Material UI, Styled Components",
     applicationUrl: "https://dash-tracker.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Dash",
-    image: `${dash}`
+    image: "dash",
   },
   {
     title: "Televize",
@@ -27,7 +27,7 @@ const projects = [
       "React, JWT, Node.js, Express, React-Bootstrap, Styled Components, TMDb API",
     applicationUrl: "https://televize.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Televize",
-    image: `${dash}`
+    image: "televize",
   },
   {
     title: "Fit Ally",
@@ -36,7 +36,7 @@ const projects = [
     tech: "React, Redux, Node.js, Express, MongoDB, JWT, custom Sass/Scss",
     applicationUrl: "https://fit-ally.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Fit-Ally",
-    image: `${dash}`
+    image: "fit-ally",
   },
   {
     title: "Portfolio",
@@ -44,13 +44,11 @@ const projects = [
     tech: "Gatsby, GraphQL, custom CSS",
     applicationUrl: "https://megan-d.netlify.app",
     codeUrl: "https://github.com/megan-d/gatsby-portfolio",
-    image: `${dash}`
+    image: "portfolio",
   },
 ]
 
-
-
-const IndexPage = (props) => (
+const IndexPage = props => (
   <Layout>
     <SEO title="Home" />
     <Hero />
@@ -64,7 +62,9 @@ const IndexPage = (props) => (
           tech={el.tech}
           appUrl={el.applicationUrl}
           codeUrl={el.codeUrl}
-          image={props.data.file.childImageSharp.fluid}
+          dash={props.data.dash.childImageSharp.fluid}
+          televize={props.data.televize.childImageSharp.fluid}
+          fitAlly={props.data.fitAlly.childImageSharp.fluid}
           key={index}
         />
       )
@@ -74,15 +74,28 @@ const IndexPage = (props) => (
 
 export default IndexPage
 
-
 export const pageQuery = graphql`
-query {
-  file(relativePath: {eq: "Fit-Ally.png"}) {
-    childImageSharp {
-        fluid(maxWidth: 985) {
+  query {
+    dash: file(relativePath: { eq: "Dash.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 985, quality: 100) {
           ...GatsbyImageSharpFluid
+        }
       }
+    }
+    televize: file(relativePath: { eq: "Televize-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 985, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fitAlly: file(relativePath: { eq: "Fit-Ally-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 985, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
-}
-}`
-
+`

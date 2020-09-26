@@ -20,7 +20,16 @@ const ProjectCard = props => {
   return (
     <div className="card">
       {/* <img src={props.image} alt="project" className='project-image'/> */}
-      <Img fluid={props.image} style={{ width: "90%" }} />
+      {props.title === "Dash" ? (
+        <Img fluid={props.dash} style={{ width: "90%" }} />
+      ) : props.title === "Televize" ? (
+        <Img fluid={props.televize} style={{ width: "90%" }} />
+      ) : props.title === "Fit Ally" ? (
+        <Img fluid={props.fitAlly} style={{ width: "90%" }} />
+      ) :(
+        <Img fluid={props.televize} style={{ width: "90%" }} />
+      )}
+
       <div className="card-content">
         <h2 className="card-title">{props.title}</h2>
         <p>{props.description}</p>
@@ -47,14 +56,3 @@ const ProjectCard = props => {
 }
 
 export default ProjectCard
-
-// export const pageQuery = graphql`
-// query {
-//   file(relativePath: {eq: "Dash.png"}) {
-//     childImageSharp {
-//         fluid(maxWidth: 988) {
-//           ...GatsbyImageSharpFluid
-//       }
-//   }
-// }
-// }`
