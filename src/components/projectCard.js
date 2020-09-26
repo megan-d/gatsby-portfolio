@@ -20,7 +20,7 @@ const ProjectCard = props => {
   return (
     <div className="card">
       {/* <img src={props.image} alt="project" className='project-image'/> */}
-      <Img fluid={props.image} style={{ width: "100%" }} />
+      <Img fluid={props.image} style={{ width: "90%" }} />
       <div className="card-content">
         <h2 className="card-title">{props.title}</h2>
         <p>{props.description}</p>

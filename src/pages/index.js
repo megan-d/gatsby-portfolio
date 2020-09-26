@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import ProjectCard from "../components/projectCard"
 import dash from '../images/Dash.png';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 const projects = [
   {
@@ -76,9 +77,9 @@ export default IndexPage
 
 export const pageQuery = graphql`
 query {
-  file(relativePath: {eq: "Televize-1.png"}) {
+  file(relativePath: {eq: "Fit-Ally.png"}) {
     childImageSharp {
-        fluid(maxWidth: 988) {
+        fluid(maxWidth: 985) {
           ...GatsbyImageSharpFluid
       }
   }
