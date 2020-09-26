@@ -33,7 +33,7 @@ const projects = [
     title: "Fit Ally",
     description:
       "Full-stack fitness application that provides a visual representation of fitness stats and activities",
-    tech: "React, Redux, Node.js, Express, MongoDB, JWT, custom Sass/Scss",
+    tech: "React, Redux, Node.js, Express, MongoDB, JWT, SCSS",
     applicationUrl: "https://fit-ally.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Fit-Ally",
     image: "fit-ally",
