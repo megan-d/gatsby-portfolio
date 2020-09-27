@@ -22,7 +22,7 @@ const projects = [
     description:
       "Application for browsing television shows and viewing show recommendations",
     tech:
-      "React, JWT, Node.js, Express, React-Bootstrap, Styled Components, TMDb API",
+      "React, Node.js, Express, React-Bootstrap, Styled Components, TMDb API",
     applicationUrl: "https://televize.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Televize",
     image: "televize",
