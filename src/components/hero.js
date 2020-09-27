@@ -10,6 +10,7 @@ const Hero = props => (
       width: "100vw",
       height: '90vh',
       backgroundColor: "orange",
+      overflow: 'scroll'
     }}
   >
     <img src={logo} alt="logo" className='logo' />
