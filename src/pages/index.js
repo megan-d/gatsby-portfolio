@@ -18,6 +18,15 @@ const projects = [
     image: "dash",
   },
   {
+    title: "Fit Ally",
+    description:
+      "Full-stack fitness application that provides a visual representation of fitness stats and activities",
+    tech: "React, Redux, Node.js, Express, MongoDB, JWT, SCSS, Chart.js",
+    applicationUrl: "https://fit-ally.herokuapp.com",
+    codeUrl: "https://github.com/megan-d/Fit-Ally",
+    image: "fit-ally",
+  },
+  {
     title: "Televize",
     description:
       "Application for browsing television shows and viewing show recommendations",
@@ -26,15 +35,6 @@ const projects = [
     applicationUrl: "https://televize.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Televize",
     image: "televize",
-  },
-  {
-    title: "Fit Ally",
-    description:
-      "Full-stack fitness application that provides a visual representation of fitness stats and activities",
-    tech: "React, Redux, Node.js, Express, MongoDB, JWT, SCSS, Chart.js",
-    applicationUrl: "https://fit-ally.herokuapp.com",
-    codeUrl: "https://github.com/megan-d/Fit-Ally",
-    image: "fit-ally",
   },
   {
     title: "Portfolio",
