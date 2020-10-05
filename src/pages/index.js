@@ -39,7 +39,7 @@ const projects = [
   {
     title: "Portfolio",
     description: "Portfolio site to display my recent projects",
-    tech: "Gatsby, GraphQL, custom CSS",
+    tech: "Gatsby, custom CSS",
     applicationUrl: "https://megan-d.netlify.app",
     codeUrl: "https://github.com/megan-d/gatsby-portfolio",
     image: "portfolio",
