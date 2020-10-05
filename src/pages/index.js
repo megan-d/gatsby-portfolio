@@ -12,7 +12,7 @@ const projects = [
     description:
       "Full-stack issue tracking, project management, and coding collaboration application",
     tech:
-      "React, Context API, Node.js, Express, MongoDB, JWT, Material UI, Styled Components, Chart.js",
+      "React, Context API, Node.js, Express, MongoDB, JWT, Material-UI, Styled Components, Chart.js",
     applicationUrl: "https://dash-tracker.herokuapp.com",
     codeUrl: "https://github.com/megan-d/Dash",
     image: "dash",
