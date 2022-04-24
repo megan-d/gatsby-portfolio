@@ -19,7 +19,7 @@ const Hero = props => (
       <h3>I build full-stack web applications.</h3>
       <div className="hero-subtitle">
         <p>
-          Check out my recent projects below and my GitHub profile{" "}
+          Check out my projects below and my GitHub profile{" "}
           <a
             href="https://www.github.com/megan-d"
             className="anchor"
